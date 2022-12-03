@@ -21,7 +21,7 @@ app.get("/app/roll", (req, res) => {
 });
 
 // part 5
-app.post("/app/roll/" (req, res) => {
+app.post("/app/roll/", (req, res) => {
   const sides = parseInt(req.body.sides);
   const dice = parseInt(req.body.dice);
   const rolls = parseInt(req.body.rolls);
