@@ -8,7 +8,7 @@ const args = minimist(process.argv.slice(2));
 const port = args.port || 5000;
 
 const app = express();
-app.use(express.urlencoded({extended: true})));
+app.use(express.urlencoded({extended: true}));
 
 // checks endpoint adn returns 200 OK (part 3)
 app.get("/app/", (req, res) => {
